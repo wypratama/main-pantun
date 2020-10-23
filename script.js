@@ -80,7 +80,7 @@ function pilihSoal() {
 
 function ramein(input) {
     if (input == true) {
-        return document.getElementById("rame").innerHTML = `Cakeeeep!!!!`
+        return document.getElementById("rame").innerHTML = `Cakeeeep!!!! +100 Tong!`
     } else  {
         return document.getElementById("rame").innerHTML = `Begimane Ceritanye Tong!! Cuma Dapet Skor ${skor} Ni!!`
     }
