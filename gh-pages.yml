@@ -1,0 +1,2 @@
+- name: Simple GitHub Pages Deploy Action
+  uses: rdarida/simple-github-pages-deploy-action@v1
