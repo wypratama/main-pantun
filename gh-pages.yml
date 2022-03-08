@@ -1,2 +1,22 @@
-- name: Simple GitHub Pages Deploy Action
-  uses: rdarida/simple-github-pages-deploy-action@v1
+name: Deploy to gh-pages
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Simple deploy with git
+        uses: rdarida/simple-github-pages-deploy-action@v1
+        with: # optional
+          git-user: '<your GitHub username>'
+          git-email: '<your email address>'
+          git-base-folder: '/'
+          commit-message: 'new deployment
+          branch: 'gh-pages'
